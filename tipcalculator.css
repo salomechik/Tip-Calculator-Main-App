@@ -160,12 +160,46 @@ body{
     width: 260px;
     margin-top: 45px;
 }
+.redbox{
+    display: flex;
+    flex-direction: row;
+}
+.red{
+    display: none;
+    color: #E17457;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: right;
+    margin-left: auto;
+    margin-top:32px;
+    padding-right: 20px;
+}
 @media(min-width:768px){
     .main{
         width: 60%;
     }
 }
 @media(min-width:1440px){
+    .billinput, .billinput2, .reset, .greenbutton, .whitebutton{
+        cursor: pointer;
+    }
+    .billinput:hover{
+        border: 2px solid #26C2AE;
+    }
+    .billinput2:hover{
+        border: 2px solid #26C2AE;
+    }
+    .whitebutton:hover{
+        border: 2px solid #26C2AE;
+    }
+    .greenbutton:hover{
+        background:  #9FE8DF;
+        color: #00474B;
+    }
+    .reset:hover{
+        background:  #9FE8DF;
+    }
     .logo{
         margin-top: 103px;
     }

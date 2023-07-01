@@ -5,6 +5,7 @@ const custom = document.querySelector(".whitebutton")
 const sum = document.querySelector(".greeninput")
 const total = document.querySelector(".second")
 const reset = document.querySelector(".reset")
+const error = document.querySelector(".red")
 
 let x = 0.0
 bill.addEventListener("input", getBill)
@@ -22,6 +23,12 @@ people.addEventListener("input", numberPeople)
 function numberPeople() {
     peopleValue = people.value;
     calculator(bill.value, x, peopleValue)
+
+    if (people.value > 0) {
+      error.style.display = "none"
+    } else {
+      error.style.display = "block"
+    };
 
 }
 
